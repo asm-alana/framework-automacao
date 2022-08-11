@@ -11,7 +11,7 @@ import java.util.List;
 
 import static site.dominio.core.setup.DriverFactory.getDriver;
 
-public class Gerais {
+public class ComandosUteis {
 
     public void escrever(By by, String texto) {
         getDriver().findElement(by).clear();

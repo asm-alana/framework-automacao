@@ -2,6 +2,7 @@ package site.dominio.runner;
 
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
+import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.runner.RunWith;
 import site.dominio.core.setup.DriverFactory;
@@ -10,9 +11,10 @@ import site.dominio.core.setup.DriverFactory;
 @CucumberOptions(
         features = {"src/test/resources/features"},
         glue = {"site.dominio"},
-        tags = "",
+        tags = "@login",
         plugin = {"json:src/test/resources/evidencias/relatorio/json/report.json","html:src/test/resources/evidencias/relatorio/html/report.html"},
         monochrome = true,
+        snippets = CucumberOptions.SnippetType.CAMELCASE,
         dryRun = false
 )
 
