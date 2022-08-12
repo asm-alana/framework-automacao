@@ -2,14 +2,14 @@
 #UTF: 8
 #Author: Alana Mendes
 
-@login
+@login @regressivo
 Funcionalidade: Login no site alexspalermo
   Como usuario do site alexpalermo
   Quero realizar login
   Para utilizar as funcionaliades do site
 
 Contexto:
-  Dado que estou no site alexspalermo
+  Dado que estou na tela de Login do site alexspalermo
 
   @loginValido
 Cenario: Login com dados validos
